@@ -12,7 +12,7 @@ namespace EmprestimoLivro.Infra.Ioc
 {
     public static class DependecyInjection
     {
-        public static IServiceCollection AddInfastruture(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             {

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EmprestimoLivro.Application\EmprestimoLivro.Application.csproj" />
     <ProjectReference Include="..\EmprestimoLivros.Domain\EmprestimoLivros.Domain.csproj" />
     <ProjectReference Include="..\EmprestimoLivros.Infra.Data\EmprestimoLivros.Infra.Data.csproj" />
