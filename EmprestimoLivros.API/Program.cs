@@ -1,4 +1,5 @@
 using EmprestimoLivro.Infra.Ioc;
+using EmprestimoLivro.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -8,6 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
 builder.Services.AddInfastructure(builder.Configuration);
 builder.Services.AddInfrastructureSwagger();
+builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 var app = builder.Build();
 
@@ -22,5 +24,3 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-
-

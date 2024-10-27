@@ -4,7 +4,7 @@ using AutoMapper;
 
 namespace EmprestimoLivro.Application.Mappings
 {
-    internal class DomainToDTOMappingProfile : Profile
+    public class DomainToDTOMappingProfile : Profile
     {
         public DomainToDTOMappingProfile()
         {

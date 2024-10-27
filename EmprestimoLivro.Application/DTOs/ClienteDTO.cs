@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Runtime.ConstrainedExecution;
 using System.Runtime.Serialization;
 
 namespace EmprestimoLivro.Application.DTOs

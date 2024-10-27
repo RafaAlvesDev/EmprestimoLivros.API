@@ -7,7 +7,7 @@ namespace EmprestimoLivros.Infra.Data.Context
     {
         public ApplicationDbContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Livro> Livro { get; set; }
         public DbSet<Livro_Cliente_Emprestimo> Livro_Cliente_Emprestimo { get; set; }
 

@@ -25,26 +25,26 @@ namespace EmprestimoLivros.Infra.Data.Respositories
         {
            var cliente = await SelecionarAsync(id);
 
-            _context.Clientes.Remove(cliente);
+            _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
             return cliente;
         }
 
         public async Task<Cliente> Incluir(Cliente cliente)
         {
-            _context.Clientes.Add(cliente);
+            _context.Cliente.Add(cliente);
             await _context.SaveChangesAsync();
             return cliente;
         }
 
         public async Task<Cliente> SelecionarAsync(int id)
         {
-            return await _context.Clientes.Where(x => x.Id == id).FirstOrDefaultAsync() ?? new Cliente();
+            return await _context.Cliente.Where(x => x.Id == id).FirstOrDefaultAsync() ?? new Cliente();
         }
 
         public async Task<IEnumerable<Cliente>> SelecionarTodosAsync()
         {
-            return await _context.Clientes.ToListAsync();
+            return await _context.Cliente.ToListAsync();
         }
     }
 }
