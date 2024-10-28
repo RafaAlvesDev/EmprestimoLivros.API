@@ -10,6 +10,7 @@ namespace EmprestimoLivros.Infra.Data.Context
         public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Livro> Livro { get; set; }
         public DbSet<Livro_Cliente_Emprestimo> Livro_Cliente_Emprestimo { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
